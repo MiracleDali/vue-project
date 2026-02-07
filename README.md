@@ -36,3 +36,18 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### 项目结构
+
+```sh
+node_modules       --- Vue项目的运行依赖文件夹   npm install 命令安装的文件夹
+public             --- 资源文件夹 （浏览器图标）
+src                --- 源码文件夹
+.gitignore         --- git文件
+index.html         --- 入口HTML文件
+# jsconfig.json      --- JavaScript 项目的配置文件，用于配置编译器选项和路径映射
+# package-lock.json  --- npm 包管理器生成的锁定文件
+package.json       --- 信息描述文件
+README.md          --- readme
+vite.config.js     --- Vue配置文件
+```
