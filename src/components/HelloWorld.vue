@@ -1,5 +1,21 @@
 <template>
-  <div class="属性绑定">
+  <div class="example_div" id="模板语法" >
+    <h1>模板语法</h1>
+    <h3>1、模板语法-文本插值</h3>
+    <p>{{ msg }}</p>
+    <h3>2、模板语法-JavaScript 表达式</h3>
+    <p>{{ number + 1 }}</p>
+    <p>{{ ok ? 'yes' : 'no' }}</p>
+    <p>{{ message.split('').reverse().join('') }}</p>
+    <!-- 下面的是不能这样使用的 -->
+    <!-- <p>{{ var a =1 }}</p> -->
+    <!-- <p>{{ if (ok) { return message } }}</p> -->
+    <h3>3、原始HTML</h3>
+    <p>{{ rawHtml }}</p>    <!-- 这样是不行的 -->
+    <p v-html="rawHtml"></p>
+  </div>
+
+  <div class="example_div" id="属性绑定">
     <h1>属性绑定</h1>
     <p> 
       注：v-bind 指令将元素的 id 与组件的属性保持一致如果绑定的是 null 或者是 undefined, 
@@ -14,13 +30,29 @@
     <h3>3、使用字典的方式绑定多个值</h3>
     <div v-bind="objectOfAttrs">对象语法</div>
   </div>
+
+  <div class="example_div" id="条件渲染">
+    <h1>条件渲染</h1>
+    <h3>1、v-if</h3>
+    <p>v-if 指令用于条件性的渲染一块内容。这块内容只会在指令的表达式返回真值时才被渲染</p>
+    
+  </div>
 </template>
+
 
 
 <script>
 export default {
   data() {
     return {
+      // 模板语法
+      msg: '神奇的语法',
+      number: 10,
+      ok: true,
+      message: "大家好",
+      rawHtml: "<a href='https://www.baidu.com/'>百度一下</a>",
+      ///////////////////////////////////////
+
       // 属性绑定
       bind_class: "active",
       bind_id: "bind_id",
@@ -33,14 +65,27 @@ export default {
         class: 'appclass',
         id: 'appid',
       }  
+      ///////////////////////////////////////
+
+      // 条件渲染
     }
   }
 }
-
 </script>
 
 
 <style>
+/* 每个知识点的外部容器样式 */
+.example_div {
+  width: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.525);
+  border-radius: 10px;      /* 圆角 */
+  background-color: rgb(226, 234, 251);
+}
+
 /* 属性绑定的样式 */
 #bind_id {
   color: rgba(255, 0, 0, 0.801);

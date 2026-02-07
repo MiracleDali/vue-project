@@ -37,8 +37,16 @@ npm run dev
 npm run build
 ```
 
-### 项目结构
+### 构建项目
+```sh
+npm init vue@latest
 
+cd Veu_project_name
+npm install
+npm run dev
+```
+
+### 项目结构
 ```sh
 node_modules       --- Vue项目的运行依赖文件夹   npm install 命令安装的文件夹
 public             --- 资源文件夹 （浏览器图标）
