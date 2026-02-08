@@ -1,6 +1,6 @@
 <template>
   <div class="example_div" id="列表渲染">
-    <h1>列表渲染</h1>
+    <h1>v-for: 列表渲染</h1>
 
     <p class="Explanation">
       我们可以使用 v-for 指令基于一个数组来渲染列表。v-for 指令的值需要使用 item in itmes 形式的特殊语法，

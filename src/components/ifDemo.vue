@@ -1,6 +1,6 @@
 <template>
   <div class="example_div" id="条件渲染">
-    <h1>条件渲染</h1>
+    <h1>v-if: 条件渲染</h1>
 
     <h3>1、v-if and v-else</h3>
     <p class="Explanation">v-if 指令用于条件性的渲染一块内容。这块内容只会在指令的表达式返回真值时才被渲染</p>
