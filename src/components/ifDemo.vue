@@ -1,5 +1,5 @@
 <template>
-  <div class="example_div" id="条件渲染">
+  <div class="example_div" id="v-if:条件渲染">
     <h1>v-if: 条件渲染</h1>
 
     <h3>1、v-if and v-else</h3>

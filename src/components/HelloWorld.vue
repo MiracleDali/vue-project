@@ -18,7 +18,7 @@
     <p v-html="rawHtml"></p>
   </div>
 
-  <div class="example_div" id="属性绑定">
+  <div class="example_div" id="v-bind:属性绑定">
     <h1>v-bind: 属性绑定</h1>
     <p class="Explanation"> 
       注：v-bind 指令将元素的 id 与组件的属性保持一致如果绑定的是 null 或者是 undefined, 

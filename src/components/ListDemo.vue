@@ -1,5 +1,5 @@
 <template>
-  <div class="example_div" id="列表渲染">
+  <div class="example_div" id="v-for:列表渲染">
     <h1>v-for: 列表渲染</h1>
 
     <p class="Explanation">
