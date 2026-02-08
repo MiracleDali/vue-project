@@ -83,9 +83,9 @@ export default {
   background-color: rgb(226, 234, 251);
 }
 
-/* 对于说明文档的样式 */
+/* 对于 p 标签 说明文档的样式 */
 .Explanation {
-  border-left: 5px solid rgba(23, 1, 185, 0.801);
+  border-left: 5px solid rgb(255, 145, 0);
   padding-left: 10px;
 }
 
