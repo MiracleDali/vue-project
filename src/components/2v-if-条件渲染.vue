@@ -19,7 +19,7 @@
     <h3>3、v-show</h3>
     <p class="Explanation">可以按条件显示一个元素的指令</p>
     <p class="Explanation">v-show 有较高的初始渲染开销</p>
-    <div v-shwo="flag">条件为 true 时显示</div>
+    <div v-show="flag">条件为 true 时显示</div>
     
   </div>    
 </template>
