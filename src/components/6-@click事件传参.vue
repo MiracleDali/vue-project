@@ -1,11 +1,11 @@
 <template>
     <div class="example_div" id="事件处理">
         <h1> 事件传参</h1>
-        <p @click="getNameHandler(item)" v-for="(item,index) of names" :key="index">{{ item }}</p>
+        <!-- 这里的 $event 是event对象 -->
+        <p @click="getNameHandler(item, $event)" v-for="(item,index) of names" :key="index">{{ item }}</p>
 
     </div>    
 </template>
-
 
 
 <script>
@@ -17,11 +17,11 @@ export default {
     },
 
     methods: {
-        // event 对象
-        getNameHandler(name){
+        // 这里的 e 是 event 对象
+        getNameHandler(name, e){
             alert(name)
+            console.log(e)
         }
     }
 }
-
 </script>
