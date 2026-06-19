@@ -37,6 +37,9 @@
                 name, age,
                 changeName, changeAge, showTel
             }
+
+            // setup 函数的返回值也可以是一个函数
+            // return () => 'haha'
         },
     }
 </script>
