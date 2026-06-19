@@ -5,9 +5,6 @@
         <button @click="changeName">修改名字</button>
         <button @click="changeAge">修改年龄</button>
         <button @click="showTel">查看联系方式</button>
-        <hr/>
-        <h2>{{a}}</h2>
-        <button @click="b">test1</button>
     </div>
 </template>
 
@@ -15,17 +12,6 @@
 <script lang="ts">
     export default {
         name: 'Person',
-
-        data() {
-            return {
-                a:100,
-            }
-        },
-        methods: {
-            b() {
-                console.log('b')
-            }
-        },
 
         setup() {
             // setup 函数中的 this 是undefined ，不能使用 this.属性
@@ -47,13 +33,13 @@
             }
 
             // 返回数据和方法
-            return {
-                name, age,
-                changeName, changeAge, showTel
-            }
+            // return {
+            //     name, age,
+            //     changeName, changeAge, showTel
+            // }
 
             // setup 函数的返回值也可以是一个函数
-            // return () => 'haha'
+            return () => 'haha'
         },
     }
 </script>
